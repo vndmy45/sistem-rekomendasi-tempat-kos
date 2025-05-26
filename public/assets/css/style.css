@@ -293,17 +293,35 @@ h2{
     height: 460px;
     border: none;
     width: 95%;
+    position: relative;
+    overflow: hidden;
 }
+
+.card img {
+    position: relative;
+    z-index: 3;
+    transition: all .2s ease-in;
+}
+
+.card-body {
+    position: relative;
+    z-index: 2;
+}
+
 .card-body h4{
     color: #000000;
     font-weight: 600;
     font-size: 24px;
     line-height: .8rem;
+    transition: all ease-in-out .3s;
+    transform: translateY(0);
 }
 .card-body p{
     color: #141414;
     font-weight: 400;
     font-size: 14px;
+    transition: all ease-in-out .3s;
+    transform: translateY(0);
 }
 .card:hover {
     background: linear-gradient(170deg, var(--pr-color), #71B4F3, #71B4F3, #000);
@@ -312,17 +330,19 @@ h2{
 }
 
 .card:hover img {
-    opacity: 0.8;
-    transition: all ease-in-out .3s;
+    transform: scale(1.1);
+    transition: all .2s ease-in;
 }
 
 .card:hover .card-body h4 {
     color: #fff;
+    transform: translateY(10px);
     transition: all ease-in-out .3s;
 }
 
 .card:hover .card-body p{
     color: #fff;
+    transform: translateY(10px);
     transition: all ease-in-out .3s;
 }
 
