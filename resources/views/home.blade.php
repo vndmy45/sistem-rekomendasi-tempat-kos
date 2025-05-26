@@ -9,8 +9,8 @@
                         <p> <span class="fw-bold">Rumah Kos</span> hadir untuk temukan tempat kos terbaik
                             untukmu, untuk disewa dan sebagai tempat ternyaman di sekitar kampus poliwangi.</p>
 
-                            <button class="button-lg-primary">Temukan Kos</button>
-                            <a href="#">
+                            <a href="{{ route('pencarian.index') }}">
+                                <button class="button-lg-primary">Temukan Kos</button>
                                 <img src={{"assets/img/arrow.png"}} alt="">
                             </a>
                     </div>
