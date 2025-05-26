@@ -1,19 +1,8 @@
 @extends('layouts.app.app')
 @section('content')
 <div class="detail-page">
-    <!-- Breadcrumb -->
-    <div class="container mt-4">
-        <nav aria-label="breadcrumb">
-            <ol class="breadcrumb">
-                <li class="breadcrumb-item"><a href="{{ url('/') }}">Home</a></li>
-                <li class="breadcrumb-item"><a href="{{ route('pencarian.index') }}">Pencarian</a></li>
-                <li class="breadcrumb-item active" aria-current="page">{{ $kos->nama }}</li>
-            </ol>
-        </nav>
-    </div>
-
     <!-- Detail Section -->
-    <div class="container mt-3">
+    <div class="container mt-5 pt-4">
         <div class="row">
             <!-- Image Gallery -->
             <div class="col-md-8">
