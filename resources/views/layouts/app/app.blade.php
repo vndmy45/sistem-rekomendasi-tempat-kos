@@ -17,26 +17,26 @@
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap" rel="stylesheet">
 
     <!-- My Style -->
-     <link rel="stylesheet" href={{ "assets/css/style.css"}}>
+     <link rel="stylesheet" href="{{ asset('assets/css/style.css') }}">
 
      <!-- Responsive Style -->
-      <link rel="stylesheet" href={{"assets/css/responsive.css"}}>
+      <link rel="stylesheet" href="{{ asset('assets/css/responsive.css') }}">
 
     <!-- Logo tittle -->
-    <link rel="icon" href={{"assets/img/logo.png"}} type="image/x-icon">
+    <link rel="icon" href="{{ asset('assets/img/logo.png') }}" type="image/x-icon">
 
     <title>RumahKost</title>
   </head>
   <body>
 
     <!-- Navbar -->
-    @include('../layouts.navbar')
+    @include('layouts.navbar')
 
     @yield('content')
 
-    @include('../layouts.footer')
+    @include('layouts.footer')
 
-       <script src={{"assets/js/navbar.js"}}></script>
+    <script src="{{ asset('assets/js/navbar.js') }}"></script>
 
     <!-- Optional JavaScript; choose one of the two! -->
 
