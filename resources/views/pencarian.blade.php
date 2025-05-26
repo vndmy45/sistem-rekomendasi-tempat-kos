@@ -64,7 +64,7 @@
             
             <div class="row g-4">
                 @forelse($kos_list as $kos)
-                <div class="col-md-4">
+                <div class="col-md-3">
                     <div class="card kost-card">
                         <img src="{{ asset('storage/' . $kos->gambar) }}" class="card-img-top" alt="{{ $kos->nama }}">
                         <div class="card-body">

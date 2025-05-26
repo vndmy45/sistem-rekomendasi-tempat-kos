@@ -606,23 +606,23 @@ footer a:hover {
 }
 
 .kost-card {
+    height: 460px;
     border: none;
+    width: 100%;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    transition: all 0.3s ease;
-}
-
-.kost-card:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    position: relative;
 }
 
 .kost-card .card-img-top {
-    height: 200px;
+    height: 250px;
     object-fit: cover;
 }
 
 .kost-card .card-body {
     padding: 1.25rem;
+    display: flex;
+    flex-direction: column;
+    height: calc(460px - 250px);
 }
 
 .kost-card .card-title {
@@ -639,6 +639,19 @@ footer a:hover {
 
 .kost-card .rating {
     font-size: 0.9rem;
+}
+
+.kost-card .btn-primary {
+    margin-top: auto;
+    background-color: var(--pr-color);
+    border: 1px solid var(--pr-color);
+    transition: all 0.3s ease;
+}
+
+.kost-card .btn-primary:hover {
+    background-color: #fff;
+    color: var(--pr-color);
+    border: 1px solid var(--pr-color);
 }
 
 .search-results {
