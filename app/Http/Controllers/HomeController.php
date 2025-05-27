@@ -6,8 +6,39 @@ use Illuminate\Http\Request;
 
 class HomeController extends Controller
 {
-    public function index ()
+    private function getFiturData()
     {
-        return view ('home');
+        return [
+            [
+                'image' => 'Fitur1.png',
+                'title' => 'Fasilitas',
+                'type' => 'Rumah minimalis Type-A2',
+                'price' => 'IDR.200jt'
+            ],
+            [
+                'image' => 'Fitur1.png',
+                'title' => 'Kamar Tidur',
+                'type' => 'Rumah minimalis Type-A2',
+                'price' => 'IDR.200jt'
+            ],
+            [
+                'image' => 'Fitur1.png',
+                'title' => 'Kamar Tidur',
+                'type' => 'Rumah minimalis Type-A2',
+                'price' => 'IDR.200jt'
+            ],
+            [
+                'image' => 'Fitur1.png',
+                'title' => 'Kamar Tidur',
+                'type' => 'Rumah minimalis Type-A2',
+                'price' => 'IDR.200jt'
+            ]
+        ];
+    }
+
+    public function index()
+    {
+        $fiturData = $this->getFiturData();
+        return view('home', compact('fiturData'));
     }
 }
