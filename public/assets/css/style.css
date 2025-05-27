@@ -4,13 +4,17 @@
 
 body{
     font-family: "Poppins", sans-serif;
-    background-color: #F3FFF4;
+    background-color: #EBF5FF;
 }
 
 /* Navbar Style */
 
 .navbar {
     z-index: 3;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
 }
 
 /* Navbar Color */
@@ -669,4 +673,20 @@ footer a:hover {
 .search-icon {
     font-size: 2rem;
     margin-top: 5px;
+}
+
+.detail-page {
+    min-height: 100vh;
+    position: relative;
+    padding-top: 20px;
+}
+
+.detail-page .container {
+    position: relative;
+}
+
+.main-image {
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
 }
